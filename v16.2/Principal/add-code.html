@@ -1,0 +1,45 @@
+
+<div class="container">
+<ol class="breadcrumb">
+  <li><a href="principal.php#/inicio">Inicio</a></li>
+  <li class="active">Agregar Codigo</li>
+</ol>
+</div>
+
+<div class="container">
+  <!-- Main component for a primary marketing message or call to action -->
+   <div class="page-header">
+        <h1> Agregar Codigo</h1>
+   </div>
+
+  <div class="col s12 M6">
+    <span class="glyphicon glyphicon-import"> </span> <a href="principal.php#/import">IMPORTAR</a>
+           <form action="Principal/controller/add-code.php" method="post">    
+              <div class="row">
+                <div class="input-field col s6">
+                  <input id="code_cod" type="text" class="validate" name="code_cod">
+                  <label for="code_cod">Codigo</label>
+                </div>
+                 <div class="input-field col s6">
+                  <input id="stock" type="text" class="validate" name="stock">
+                  <label for="stock">Cantidad</label>
+                </div>
+              </div>
+              <div class="row">
+                <div class="input-field col s12">
+                  <input id="description_cod" type="text" class="validate" name="description_cod">
+                  <label for="description_cod">Descripcion del Codigo</label>
+                </div>
+              </div>    
+<br><br>
+            <div class="modal-footer grey lighten-3">
+              <div class="col s12">
+                <a class="left btn waves-effect waves-light lime darken-3" href="principal.php#/inicio"><i class="material-icons">replay</i></a>
+                <button class="right btn waves-effect waves-red lime darken-3"  type="submit"><i class="material-icons">done_all</i></button> 
+              </div>  
+            </div>          
+        </form> 
+    </div>          
+</div>
+<br/>
+<br/>

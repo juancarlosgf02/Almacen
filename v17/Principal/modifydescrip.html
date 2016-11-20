@@ -1,0 +1,37 @@
+<div class="container">
+  <ol class="breadcrumb">
+    <li><a href="principal.php#/inicio">Inicio</a></li>
+    <li class="active">Modificar Descripción</li>
+  </ol>
+</div>
+<div class="container">
+  <!-- Main component for a primary marketing message or call to action -->
+   <div class="page-header">
+      <h1> Modificar Descripción</h1>
+   </div>
+   <form action="Principal/controller/modifydescrip.php" method="post">
+     <div class="form-group">
+        <div class="col-xs-4">
+            <label for="code_cod">Código</label>
+             <input id="code_cod" type="text" class="form-control" name="code_cod" placeholder="Código">
+        </div>
+     </div><br/><br/><br/>
+    <div class="page-header">
+        <h1>Ingrese Cambios</h1>
+    </div>              
+    <div class="form-group"> 
+       <div class="col-xs-4">
+           <label for="description_cod">Descripción</label>
+           <input id="description_cod" type="text" class="form-control" name="description_cod" placeholder="Descripción">
+       <br/>
+       </div>
+    </div>
+    <div class="row">
+      <div class="col-md-4 col-md-offset-9">
+         <a href="principal.php#/inicio"><button type="button" class="btn btn-danger">Cancelar</button></a> 
+         <button class="btn btn-success" type="submit" >Procesar</button>
+      </div>  
+    </div>          
+ </form> 
+</div>
+      			
